@@ -1,0 +1,9 @@
+jupyterlab
+langgraph
+langchain
+langchain-openai
+langchain-community 
+langchain_ollama
+gradio
+fastapi
+uvicorn
