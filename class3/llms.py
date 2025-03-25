@@ -19,11 +19,8 @@ def initialize_llm() -> tuple[ChatOpenAI, OllamaEmbeddings]:
     """
     初始化LLM实例
 
-    Args:
-        llm_type (str): 'ollama'
-
     Returns:
-        ChatOpenAI: 
+        ChatOpenAI, OllamaEmbeddings: 
 
     Raises:
         LLMInitializationError: 
@@ -70,7 +67,6 @@ def get_llm() -> tuple[ChatOpenAI, OllamaEmbeddings]:
     except LLMInitializationError as e:
         logger.warning(f"使用默认配置重试: {str(e)}")
         raise  # 如果默认配置也失败，则抛出异常
-
 
 # 示例使用
 if __name__ == "__main__":
