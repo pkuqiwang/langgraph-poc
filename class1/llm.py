@@ -17,11 +17,9 @@ MODEL_CONFIGS = {
 DEFAULT_LLM_TYPE = "ollama"
 DEFAULT_TEMPERATURE = 0.7
 
-
 class LLMInitializationError(Exception):
     """Initialization Error"""
     pass
-
 
 def initialize_llm(llm_type: str = DEFAULT_LLM_TYPE) -> Optional[ChatOpenAI]:
     """
@@ -40,7 +38,6 @@ def initialize_llm(llm_type: str = DEFAULT_LLM_TYPE) -> Optional[ChatOpenAI]:
 
         config = MODEL_CONFIGS[llm_type]
 
-        # 创建LLM实例
         llm = ChatOpenAI(
             base_url=config["base_url"],
             api_key=config["api_key"],
