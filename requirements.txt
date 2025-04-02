@@ -4,10 +4,14 @@ langchain
 langchain-openai
 langchain-community 
 langchain_ollama
+langchain-qdrant
 langgraph-checkpoint-postgres
+langchain_experimental
 gradio
 fastapi
 uvicorn
 psycopg-pool
 psycopg-binary
 psycopg_c
+qdrant-client
+typing
